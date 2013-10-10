@@ -1,0 +1,2 @@
+select u.ID, STR_TO_DATE(CONCAT(DAY(u.birthDay),'/', MONTH(u.birthDay),'/', YEAR(CURDATE())), '%m/%d/%Y'),CONCAT(DAY(u.birthDay),'/', MONTH(u.birthDay),'/', YEAR(CURDATE()))
+FROM user u
